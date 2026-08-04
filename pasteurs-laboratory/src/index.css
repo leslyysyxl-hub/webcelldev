@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Georgia, serif;
+  background-color: #f5e6d3;
+}
+
+.lab-border {
+  border: 2px solid #4a3728;
+  border-radius: 4px;
+}
+
+.lab-panel {
+  background-color: #f5e6d3;
+  border: 1px solid #4a3728;
+  box-shadow: 2px 2px 4px rgba(74, 55, 40, 0.3);
+}
+
+.btn-primary {
+  @apply bg-lab-brown text-lab-cream px-4 py-2 rounded hover:bg-opacity-90 transition-all;
+}
+
+.btn-secondary {
+  @apply border border-lab-brown text-lab-brown px-4 py-2 rounded hover:bg-lab-brown hover:text-lab-cream transition-all;
+}
